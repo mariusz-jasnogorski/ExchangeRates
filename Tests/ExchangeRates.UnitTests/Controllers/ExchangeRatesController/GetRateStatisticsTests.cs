@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using ExchangeRates.Services.DTO;
 
 
-namespace ExchangeRates.Tests.Controllers.ExchangeRatesController
+namespace ExchangeRates.Tests.UnitTests.Controllers.ExchangeRatesController
 {
     [TestClass]
     public class GetRateStatisticsTests : ExchangeRatesControllerTestBase

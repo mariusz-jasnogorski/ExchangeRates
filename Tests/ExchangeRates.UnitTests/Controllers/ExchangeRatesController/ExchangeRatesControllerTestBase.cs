@@ -5,7 +5,7 @@ using Moq;
 using ExchangeRates.Services.Interfaces;
 
 
-namespace ExchangeRates.Tests.Controllers.ExchangeRatesController
+namespace ExchangeRates.Tests.UnitTests.Controllers.ExchangeRatesController
 {
     public class ExchangeRatesControllerTestBase
     {

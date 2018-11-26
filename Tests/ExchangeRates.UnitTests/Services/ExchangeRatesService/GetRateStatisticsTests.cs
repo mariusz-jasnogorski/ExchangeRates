@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
 
-namespace ExchangeRates.Tests.Services.ExchangeRatesService
+namespace ExchangeRates.Tests.UnitTests.Services.ExchangeRatesController
 {
     [TestClass]
     public class GetRateStatisticsTests : ExchangeRatesServiceTestBase
@@ -17,7 +17,8 @@ namespace ExchangeRates.Tests.Services.ExchangeRatesService
             // Arrange
             var expected = new List<float> { 1, 2, 3, 4, 5 }; 
 
-            MockExchangeRateRepository.Setup(repository => repository.GetRatesAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<DateTime>(), It.IsAny<DateTime>()))
+            MockExchangeRateRepository
+                .Setup(repository => repository.GetRatesAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<DateTime>(), It.IsAny<DateTime>()))
                 .ReturnsAsync(expected);
            
             // Act

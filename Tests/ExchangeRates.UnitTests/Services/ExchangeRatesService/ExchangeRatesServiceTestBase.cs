@@ -1,11 +1,12 @@
 ﻿using Moq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.Extensions.Configuration;
 
 using ExchangeRates.Repositories.Interfaces;
 
 
-namespace ExchangeRates.Tests.Services.ExchangeRatesService
-{    
+namespace ExchangeRates.Tests.UnitTests.Services.ExchangeRatesController
+{
 
     public class ExchangeRatesServiceTestBase
     {

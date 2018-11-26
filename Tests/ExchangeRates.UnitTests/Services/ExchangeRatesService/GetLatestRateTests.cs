@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 
-namespace ExchangeRates.Tests.Services.ExchangeRatesService
+namespace ExchangeRates.Tests.UnitTests.Services.ExchangeRatesController
 {
     [TestClass]
     public class GetLatestRateTests : ExchangeRatesServiceTestBase
@@ -14,7 +14,7 @@ namespace ExchangeRates.Tests.Services.ExchangeRatesService
             // Arrange
             const float expected = 5;
 
-            MockExchangeRateRepository.Setup(repository => repository.GetLatestRateAsync(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.FromResult(expected));           
+            MockExchangeRateRepository.Setup(repository => repository.GetLatestRateAsync(It.IsAny<string>(), It.IsAny<string>())).Returns(Task.FromResult(expected));
 
             // Act
             var result = await ExchangeRatesService.GetLatestRateAsync(It.IsAny<string>(), It.IsAny<string>());

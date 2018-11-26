@@ -9,9 +9,13 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeRates.Services", "ExchangeRates.Services\ExchangeRates.Services.csproj", "{F5936848-6ABC-4703-A6F0-E18C4F56311D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeRates.Tests", "ExchangeRates.Tests\ExchangeRates.Tests.csproj", "{0D2B945B-0DB1-46B6-AA62-DED8CC80A817}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeRates.Repositories", "ExchangeRates.Repositories\ExchangeRates.Repositories.csproj", "{53AE500D-0C62-4321-9B11-8DD84F97F9E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3AE13114-C8CF-43AB-87EA-70D54CB9BDC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRates.IntegrationTests", "Tests\ExchangeRates.IntegrationTests\ExchangeRates.IntegrationTests.csproj", "{DC71FF47-6C96-4379-840C-84285692B931}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeRates.UnitTests", "Tests\ExchangeRates.UnitTests\ExchangeRates.UnitTests.csproj", "{5A167B1C-AA42-40F5-AB92-4D5101166FF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,17 +35,25 @@ Global
 		{F5936848-6ABC-4703-A6F0-E18C4F56311D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5936848-6ABC-4703-A6F0-E18C4F56311D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5936848-6ABC-4703-A6F0-E18C4F56311D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0D2B945B-0DB1-46B6-AA62-DED8CC80A817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D2B945B-0DB1-46B6-AA62-DED8CC80A817}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D2B945B-0DB1-46B6-AA62-DED8CC80A817}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D2B945B-0DB1-46B6-AA62-DED8CC80A817}.Release|Any CPU.Build.0 = Release|Any CPU
 		{53AE500D-0C62-4321-9B11-8DD84F97F9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{53AE500D-0C62-4321-9B11-8DD84F97F9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53AE500D-0C62-4321-9B11-8DD84F97F9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53AE500D-0C62-4321-9B11-8DD84F97F9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC71FF47-6C96-4379-840C-84285692B931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC71FF47-6C96-4379-840C-84285692B931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC71FF47-6C96-4379-840C-84285692B931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC71FF47-6C96-4379-840C-84285692B931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A167B1C-AA42-40F5-AB92-4D5101166FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A167B1C-AA42-40F5-AB92-4D5101166FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A167B1C-AA42-40F5-AB92-4D5101166FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A167B1C-AA42-40F5-AB92-4D5101166FF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC71FF47-6C96-4379-840C-84285692B931} = {3AE13114-C8CF-43AB-87EA-70D54CB9BDC7}
+		{5A167B1C-AA42-40F5-AB92-4D5101166FF2} = {3AE13114-C8CF-43AB-87EA-70D54CB9BDC7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D7F1DAF-D622-4E9A-BFD5-331A8D9E62BC}
