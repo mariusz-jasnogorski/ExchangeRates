@@ -8,6 +8,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ExchangeRates.Repositories.Interfaces;
 using ExchangeRates.Repositories.Implementations;
 
+
 namespace ExchangeRates.Tests.IntegrationTests.Services.ExchangeRatesService
 {
     public class ExchangeRatesServiceTestBase
