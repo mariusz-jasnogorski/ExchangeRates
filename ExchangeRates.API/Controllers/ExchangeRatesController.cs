@@ -25,7 +25,7 @@ namespace ExchangeRates.API.Controllers
 
         /// <summary>
         /// Retrieves exchange rate for given currencies.
-        /// Example: GET /api/ExchangeRates/GetLatestRate?currencyFrom=EUR&currencyTo=USD
+        /// Example: GET /api/ExchangeRates/GetLatestRate?currencyFrom=EUR&currencyTo=PLN
         /// </summary>
         /// <param name="currencyFrom">Source currency</param>
         /// <param name="currencyTo">Destination currency</param>        
